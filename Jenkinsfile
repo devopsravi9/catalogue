@@ -1,10 +1,5 @@
-pipeline {
-  agent any
-  stages {
-    stage ('inatall dependencies') {
-      steps {
-        sh 'npm install'
-        }
-      }
-    }
-  }
+@Library('roboshop-jenkins-shared-library') _
+
+env.COMPONENT= 'catalogue'
+env.APP_TPE= 'nodejs'
+nodejs()
