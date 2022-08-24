@@ -1,0 +1,8 @@
+trigger:
+- main
+
+pool: d65
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
